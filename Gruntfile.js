@@ -13,7 +13,7 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'webroot/css/style.min.css': 'webroot/css/style.scss'
+          'webroot/css/style.min.css' : 'webroot/sass/style.scss'
         }
       } 
     },
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         },
       }, 
       css: {
-        files: ['css/**/*.scss'],
+        files: ['webroot/sass/**/*.scss'],
         tasks: ['sass'],
         options: {
           spawn: false

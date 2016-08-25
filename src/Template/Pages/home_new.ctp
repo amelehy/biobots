@@ -33,7 +33,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 </head>
 <body>
-  <div id="container" class="container-fluid"></div>
+  <div id="app-container" class="container-fluid"></div>
 </body>
 <?= $this->Html->script('build/application.min.js') ?>
 </html>
