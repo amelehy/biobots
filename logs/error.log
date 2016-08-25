@@ -1,0 +1,29 @@
+2016-08-25 02:07:03 Error: Fatal Error (4): syntax error, unexpected '?>' in [/Applications/MAMP/htdocs/biobots/src/Template/Pages/home_new.ctp, line 31]
+Request URL: /
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-08-25 02:07:03 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '?>'
+Request URL: /
+Stack Trace:
+#0 /Applications/MAMP/htdocs/biobots/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Applications/M...', 31)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-08-25 03:13:40 Error: [Cake\Core\Exception\MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Stack Trace:
+#0 /Applications/MAMP/htdocs/biobots/config/bootstrap.php(210): Cake\Core\Plugin::load('DebugKit', Array)
+#1 /Applications/MAMP/htdocs/biobots/vendor/cakephp/cakephp/src/Http/BaseApplication.php(61): require_once('/Applications/M...')
+#2 /Applications/MAMP/htdocs/biobots/vendor/cakephp/cakephp/src/Http/Server.php(72): Cake\Http\BaseApplication->bootstrap()
+#3 /Applications/MAMP/htdocs/biobots/webroot/index.php(37): Cake\Http\Server->run()
+#4 {main}
+
+

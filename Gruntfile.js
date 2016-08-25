@@ -1,8 +1,8 @@
 module.exports = function(grunt) {
 
-  var jsCompiledDir = 'js/build/';
-  var jsSourceDir = 'js/source/';
-  var jsCompiledDirTmp = 'js/build/tmp/';
+  var jsCompiledDir = 'webroot/js/build/';
+  var jsSourceDir = 'webroot/js/source/';
+  var jsCompiledDirTmp = 'webroot/js/build/tmp/';
   var applicationJsName = jsCompiledDir + 'application.min.js';
 
   grunt.initConfig({
@@ -13,7 +13,7 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'css/style.min.css': 'css/style.scss'
+          'webroot/css/style.min.css': 'webroot/css/style.scss'
         }
       } 
     },

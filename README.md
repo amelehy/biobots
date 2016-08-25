@@ -1,7 +1,12 @@
-Development Setup
------------------
-1. run the project on an http server. 
-2. run `npm install` in the project root directory.
-3. run `grunt watch` while editing .jsx or .scss files in the root directory.
-4. visit `localhost/biobots`.
+# Setup
+
+1. clone the repo `git clone https://github.com/amelehy/biobots.git` 
+2. run `npm install` in this directory.
+3. run the included web server `bin/cake server`. 
+4. visit `http://localhost:8765`
 5. Enjoy!
+
+*if you want to edit any .jsx or .scss files you'll have to run `grunt watch` in
+this directory while editing so that the source files are compiled into the 
+final application files.
+
