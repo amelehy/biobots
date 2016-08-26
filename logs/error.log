@@ -103,3 +103,75 @@ Stack Trace:
 #2 {main}
 
 
+2016-08-26 03:00:20 Error: Fatal Error (1): Class 'App\Controller\App' not found in [/Applications/MAMP/htdocs/biobots/src/Controller/DataController.php, line 6]
+Request URL: /data/get_bio_print_data
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-08-26 03:00:20 Warning: Headers already sent in /Applications/MAMP/htdocs/biobots/src/Controller/DataController.php:6
+2016-08-26 03:00:20 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\App' not found
+Request URL: /data/get_bio_print_data
+Stack Trace:
+#0 /Applications/MAMP/htdocs/biobots/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 6)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-08-26 03:00:32 Error: Fatal Error (4): syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION) in [/Applications/MAMP/htdocs/biobots/src/Controller/DataController.php, line 11]
+Request URL: /data/get_bio_print_data
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-08-26 03:00:32 Warning: Headers already sent in /Applications/MAMP/htdocs/biobots/src/Controller/DataController.php:11
+2016-08-26 03:00:32 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'App' (T_STRING), expecting function (T_FUNCTION)
+Request URL: /data/get_bio_print_data
+Stack Trace:
+#0 /Applications/MAMP/htdocs/biobots/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/Applications/M...', 11)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-08-26 03:01:57 Error: Fatal Error (1): Class 'App\Controller\App' not found in [/Applications/MAMP/htdocs/biobots/src/Controller/DataController.php, line 19]
+Request URL: /data/get_bio_print_data
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-08-26 03:01:57 Warning: Headers already sent in /Applications/MAMP/htdocs/biobots/src/Controller/DataController.php:19
+2016-08-26 03:01:57 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\App' not found
+Request URL: /data/get_bio_print_data
+Stack Trace:
+#0 /Applications/MAMP/htdocs/biobots/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 19)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-08-26 03:03:25 Error: Fatal Error (1): Class 'App\Controller\App' not found in [/Applications/MAMP/htdocs/biobots/src/Controller/DataController.php, line 3]
+Request URL: /data/get_bio_print_data
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-08-26 03:03:25 Warning: Headers already sent in /Applications/MAMP/htdocs/biobots/src/Controller/DataController.php:3
+2016-08-26 03:03:25 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\App' not found
+Request URL: /data/get_bio_print_data
+Stack Trace:
+#0 /Applications/MAMP/htdocs/biobots/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/Applications/M...', 3)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

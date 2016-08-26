@@ -35,5 +35,6 @@
 <body>
   <div id="app-container" class="container-fluid"></div>
 </body>
+<?= $this->Html->script('lib/node_modules/highcharts/highcharts.js') ?>
 <?= $this->Html->script('build/application.min.js') ?>
 </html>
