@@ -35,6 +35,6 @@
 <body>
   <div id="app-container" class="container-fluid"></div>
 </body>
-<?= $this->Html->script('lib/node_modules/highcharts/highcharts.js') ?>
+  <script src="/assets/get_external_asset/<?= base64_encode('node_modules/highcharts/highcharts.js'); ?>"></script>
 <?= $this->Html->script('build/application.min.js') ?>
 </html>
