@@ -5,6 +5,7 @@ $brand-primary: #e63131;
 
 body{
   color: $text-color;
+  background-color: $gray-lighter;
 }
 
 #app-container{
@@ -17,7 +18,7 @@ body{
     height: 60px;
     padding: 10px;
     background: white;
-    border-bottom: 1px solid $gray-lighter;
+    border-bottom: 1px solid $gray-light;
     .logo-container{
       height: 100%;
       display: flex;

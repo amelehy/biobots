@@ -1,1 +1,4 @@
+// sass cache files
 .sass-cache
+// log files
+logs/*
