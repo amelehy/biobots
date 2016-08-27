@@ -1,5 +1,8 @@
 /* variable overrides */
 $brand-primary: #e63131;
+$gray-light: #c5c5c5;
+/* other variables */
+$header-height: 60px;
 
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
@@ -8,14 +11,24 @@ body{
   background-color: $gray-lighter;
 }
 
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
 #app-container{
+  .block{
+    border: 1px solid $gray-light;
+    background-color: white;
+    padding: 5px;
+  }
   #header{
     margin: 0 -15px;
     position: fixed;
     z-index: 9;
     top: 0;
     width: 100%;
-    height: 60px;
+    height: $header-height;
     padding: 10px;
     background: white;
     border-bottom: 1px solid $gray-light;
@@ -25,6 +38,40 @@ body{
       align-items: center;
       img#logo{
         height: 35%;
+      }
+    }
+  }
+  #metrics-container{
+    margin-top: $header-height + 40;
+    #metrics-container-inner{
+      display: flex;
+      justify-content: space-between;
+      padding: 0px;
+      .metric{
+        width: 320px;
+        text-align: center;
+        .value{
+          font-weight: bold;
+          font-size: 2.5em;
+        }
+        .label{ 
+          color: $gray-light;
+          font-size: 1.1em;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  #table-container{
+    margin-top: 20px;
+    th{
+      white-space: normal !important;
+      font-size: 0.9em;
+      font-weight: 200;
+    }
+    tr{
+      &.selected{
+        background-color: lighten($brand-info, 20% )
       }
     }
   }
