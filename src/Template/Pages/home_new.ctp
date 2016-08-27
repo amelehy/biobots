@@ -36,7 +36,7 @@
   <script src="https://fb.me/react-15.2.1.min.js"></script>
   <script src="https://fb.me/react-dom-15.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
-  <script src="/assets/get_external_asset/<?= base64_encode('node_modules/react-bootstrap-table/dist/react-bootstrap-table.js'); ?>"></script>
+  <script src="/assets/get_external_asset/<?= base64_encode('node_modules/react-bootstrap-table/dist/react-bootstrap-table.min.js'); ?>"></script>
   <script src="/assets/get_external_asset/<?= base64_encode('node_modules/jquery/dist/jquery.min.js'); ?>"></script>
   <?= $this->Html->script('build/application.min.js') ?>
 </html>

@@ -467,3 +467,23 @@ Stack Trace:
 #2 {main}
 
 
+2016-08-27 03:15:11 Error: Fatal Error (1): Call to undefined function App\Controller\rounc() in [/Applications/MAMP/htdocs/biobots/src/Controller/DataController.php, line 79]
+Request URL: /data/get_bio_print_metric_average_data
+Referer URL: http://localhost:8765/
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 98
+[main] - [internal], line ??
+
+
+
+2016-08-27 03:15:11 Warning: Headers already sent in /Applications/MAMP/htdocs/biobots/src/Controller/DataController.php:79
+2016-08-27 03:15:11 Error: [Cake\Error\FatalErrorException] Call to undefined function App\Controller\rounc()
+Request URL: /data/get_bio_print_metric_average_data
+Referer URL: http://localhost:8765/
+Stack Trace:
+#0 /Applications/MAMP/htdocs/biobots/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(98): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/Applications/M...', 79)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

@@ -27,8 +27,79 @@ class DataController extends AppController
     return $this->response;
   }
 
+  /**
+   * getBioPrintMetricAverageData method
+   *
+   * @param none.
+   * @return \Cake\Network\Response|null
+   */
+  public function getBioPrintMetricAverageData()
+  {
+    $file = new File('./data/bioprint-data.json');
+    $response = json_encode(array(
+      'error' => false, 
+      'message' => array(
+        'user_count' => $this->__getUserCount($file->read()), 
+        'avg_layer_height' => $this->__getAverageLayerHeight($file->read()), 
+        'avg_layer_count' => $this->__getAverageLayerCount($file->read())
+      )
+    ));
+    $this->response->type('application/json');
+    $this->response->body($response);
+    return $this->response;
+  }
+
+  /**
+   * __getUserCount method
+   *
+   * @param JSON string.
+   * @return array
+   */
+  private function __getUserCount($data){
+    $uniqueUsers = [];
+    foreach (json_decode($data) as $obj) {
+      if(!in_array($obj->user_info->email, $uniqueUsers)){
+        array_push($uniqueUsers, $obj->user_info->email);
+      }
+    }
+    return sizeof($uniqueUsers);
+  }
+
+  /**
+   * __getAverageLayerHeight method
+   *
+   * @param JSON string.
+   * @return array
+   */
+  private function __getAverageLayerHeight($data){
+    $sum = 0;
+    foreach (json_decode($data) as $obj) {
+      $sum += $obj->print_info->resolution->layerHeight;
+    }
+    return round($sum / sizeof(json_decode($data)), 2);
+  }
+
+  /**
+   * __getAverageLayerCount method
+   *
+   * @param JSON string.
+   * @return array
+   */
+  private function __getAverageLayerCount($data){
+    $sum = 0;
+    foreach (json_decode($data) as $obj) {
+      $sum += $obj->print_info->resolution->layerNum;
+    }
+    return round($sum / sizeof(json_decode($data)), 2);
+  }
+
+  /**
+   * __formatData method
+   *
+   * @param JSON string.
+   * @return array
+   */
   private function __formatData($data){
-    // return var_dump(json_decode($data));
     return array_map(function($printJobObj){
       return array(
         'username' => $printJobObj->user_info->email,

@@ -41,8 +41,29 @@ body{
       }
     }
   }
-  #table-container{
+  #metrics-container{
     margin-top: $header-height + 40;
+    #metrics-container-inner{
+      display: flex;
+      justify-content: space-between;
+      padding: 0px;
+      .metric{
+        width: 320px;
+        text-align: center;
+        .value{
+          font-weight: bold;
+          font-size: 2.5em;
+        }
+        .label{ 
+          color: $gray-light;
+          font-size: 1.1em;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  #table-container{
+    margin-top: 20px;
     th{
       white-space: normal !important;
       font-size: 0.9em;
